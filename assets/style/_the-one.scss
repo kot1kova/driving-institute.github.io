@@ -1,0 +1,155 @@
+.one-page {
+	.slogan {
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+		min-height: 20px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.writing-cursor {
+		display: inline-block;
+		width: 3px;
+		height: 1.2em;
+		background-color: $white;
+		margin-left: 4px;
+		animation: blink 1s infinite;
+		opacity: 0;
+		&.active {
+			opacity: 1;
+		}
+	}
+
+	@keyframes blink {
+		0%,
+		50% {
+			opacity: 1;
+		}
+		51%,
+		100% {
+			opacity: 0;
+		}
+	}
+
+	.char {
+		display: inline-block;
+		opacity: 0;
+		transform: translateY(20px) rotate(-5deg);
+
+		&.writing {
+			animation: writeChar 0.1s ease-out forwards;
+		}
+
+		&.erasing {
+			animation: eraseChar 0.05s ease-in forwards;
+		}
+	}
+
+	@keyframes writeChar {
+		0% {
+			opacity: 0;
+			transform: translateY(20px) rotate(-5deg) scale(0.8);
+		}
+		50% {
+			transform: translateY(-5px) rotate(2deg) scale(1.1);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0) rotate(0deg) scale(1);
+		}
+	}
+
+	@keyframes eraseChar {
+		0% {
+			opacity: 1;
+			transform: scale(1) rotate(0deg);
+		}
+		50% {
+			transform: scale(0.9) rotate(-2deg);
+		}
+		100% {
+			opacity: 0;
+			transform: scale(0.8) rotate(-5deg);
+		}
+	}
+	.one {
+		margin-top: 40px;
+		&__wrapper {
+			margin-top: 40px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+		&__item {
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			gap: 40px;
+			background-size: $gr-bot-size;
+			background-position: $gr-bot-pos;
+			background-repeat: $gr-bot-rep;
+			border-radius: $br-20;
+			background-color: $black;
+		}
+		&__item:nth-child(1) {
+			background-image: $gr-bot-color;
+		}
+		&__item:nth-child(2) {
+			background-image: $gr-top-color;
+		}
+		&__item:nth-child(3) {
+			background-image: $gr-bot-color;
+		}
+		&__item:nth-child(4) {
+			background-image: url(../img/one-time/military-img.png);
+			background-position: bottom;
+			background-size: cover;
+			// background-image: $gr-top-color;
+		}
+		&__info .one__box:last-child {
+			margin-top: 20px;
+		}
+		&__numb {
+			color: $white;
+			margin-top: 5px;
+		}
+		&__subtitle {
+			margin-top: 0;
+		}
+		.text {
+			margin-top: 10px;
+		}
+	}
+	.taxi {
+		margin-top: 80px;
+		&__inner {
+			border-top: 1px solid $dark-blue;
+			border-bottom: 1px solid $dark-blue;
+			padding: 40px 20px;
+		}
+		&__wrapper {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+		}
+		&__content {
+			// max-width: 380px;
+			// width: 100%;
+			max-width: 32%;
+		}
+		&__info {
+			margin-top: 20px;
+			display: flex;
+			justify-content: space-between;
+		}
+		&__numb {
+			margin-top: 5px;
+		}
+		.text {
+			margin-top: 20px;
+		}
+		// &__img {
+		// 	max-width: 780px;
+		// 	width: 100%;
+		// }
+	}
+}
