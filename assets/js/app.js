@@ -8,8 +8,8 @@ sections.forEach(section => {
     duration: 0.7,
     scrollTrigger: {
       trigger: section,
-      start: 'top 80%',
-      end: 'bottom 60%',
+      start: 'top 88%',
+      end: 'bottom bottom',
       toggleActions: 'play none none none',
       // markers: true,
     },

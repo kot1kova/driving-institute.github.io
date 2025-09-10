@@ -89,6 +89,7 @@
 			background-repeat: $gr-bot-rep;
 			border-radius: $br-20;
 			background-color: $black;
+			min-height: 230px;
 		}
 		&__item:nth-child(1) {
 			background-image: $gr-bot-color;
@@ -100,10 +101,26 @@
 			background-image: $gr-bot-color;
 		}
 		&__item:nth-child(4) {
+			// background-color: $dark-blue;
+			background-image: $gr-top-color;
+
+			.one__content {
+				// text-align: right;
+				margin-top: auto;
+			}
+			.h3-title {
+				color: $white;
+			}
+		}
+		&__item:nth-child(5) {
+			grid-column: 1/3;
 			background-image: url(../img/one-time/military-img.png);
-			background-position: bottom;
+			background-position: 0 50px;
 			background-size: cover;
-			// background-image: $gr-top-color;
+			border: 1px solid $light-blue;
+			// .one__content {
+			// 	margin-top: auto;
+			// }
 		}
 		&__info .one__box:last-child {
 			margin-top: 20px;
