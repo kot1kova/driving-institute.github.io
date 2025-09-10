@@ -178,12 +178,63 @@
 			display: flex;
 			gap: 20px;
 		}
-		&__img {
-			max-width: 380px;
+		.certificate {
+			&__images {
+				position: relative;
+				max-width: 380px;
+				width: 100%;
+			}
+			&__img {
+				max-width: 380px;
+				width: 100%;
+			}
+
+			&__light {
+				position: absolute;
+				top: 60%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 70%;
+				opacity: 0;
+				animation: blink 3.2s infinite;
+			}
+		}
+
+		@keyframes blink {
+			0% {
+				opacity: 0;
+			}
+			63% {
+				opacity: 0;
+			}
+			75% {
+				opacity: 1;
+			}
+			85% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+
+		&__info {
+			max-width: 760px;
 			width: 100%;
 		}
 		.text {
 			margin-top: 10px;
+		}
+		&__box {
+			margin-top: 30px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		&__logo {
+			margin-left: auto;
+			max-width: 60px;
+			width: 100%;
 		}
 	}
 }

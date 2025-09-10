@@ -1,73 +1,85 @@
 gsap.registerPlugin(ScrollTrigger)
 
-const sections = document.querySelectorAll('section');
+const sections = document.querySelectorAll('section')
 sections.forEach(section => {
-  gsap.from(section, {
-    opacity: 0,
-    y: 100,
-    duration: 0.7,
-    scrollTrigger: {
-      trigger: section,
-      start: 'top 88%',
-      end: 'bottom bottom',
-      toggleActions: 'play none none none',
-      // markers: true,
-    },
-  });
-});
-
-gsap.timeline({
-  scrollTrigger: {
-    trigger: ".taxi",
-    start: "top 80%",
-    // end: "bottom bottom",
-    end: "bottom 60%",
-    toggleActions: "play none none none",
-    // markers: true,
-  }	
+	gsap.from(section, {
+		opacity: 0,
+		y: 100,
+		duration: 0.7,
+		scrollTrigger: {
+			trigger: section,
+			start: 'top 88%',
+			end: 'bottom bottom',
+			toggleActions: 'play none none none',
+			// markers: true,
+		},
+	})
 })
-.from(".taxi__content", {
-  opacity: 0,
-  y: 70,
-  duration: 0.5,
-  ease: "power2.out"
-})
-.from("#car", {
-  opacity: 0,
-  x: -100,
-  duration: 1,
-  ease: "power2.out"
-}, "+=0.2"); 
 
-gsap.timeline({
-  scrollTrigger: {
-    trigger: ".certificate",
-    start: "top 80%",
-    // end: "bottom bottom",
-    end: "bottom 60%",
-    toggleActions: "play none none none",
-    // markers: true,
-  }	
-})
-.from(".certificate__info", {
-  opacity: 0,
-  y: 70,
-  duration: 0.5,
-  ease: "power2.out"
-})
-.from("#car_two", {
-  opacity: 0,
-  // y: 100,
-	scale: 0.5,
-  duration: 1.5,
-  ease: "power2.out"
-}, "+=0.2"); 
+gsap
+	.timeline({
+		scrollTrigger: {
+			trigger: '.taxi',
+			start: 'top 80%',
+			// end: "bottom bottom",
+			end: 'bottom 60%',
+			toggleActions: 'play none none none',
+			// markers: true,
+		},
+	})
+	.from('.taxi__content', {
+		opacity: 0,
+		y: 70,
+		duration: 0.5,
+		ease: 'power2.out',
+	})
+	.from(
+		'#car',
+		{
+			opacity: 0,
+			x: -100,
+			duration: 1,
+			ease: 'power2.out',
+		},
+		'+=0.2'
+	)
 
+gsap
+	.timeline({
+		scrollTrigger: {
+			trigger: '.certificate',
+			start: 'top 80%',
+			// end: "bottom bottom",
+			end: 'bottom 60%',
+			toggleActions: 'play none none none',
+			// markers: true,
+		},
+	})
+	.from('.certificate__info', {
+		opacity: 0,
+		y: 70,
+		duration: 0.5,
+		ease: 'power2.out',
+	})
 
-
-
-
-
+	.from(
+		'#car_two',
+		{
+			opacity: 0,
+			// y: 100,
+			scale: 0.5,
+			duration: 1.5,
+			ease: 'power2.out',
+		},
+		'+=0.2'
+	)
+	.from('#car_light', {
+		opacity: 0,
+		// y: 100,
+		// scale: 0.5,
+		duration: 3,
+		// ease: 'power2.out',
+	},'+=0.4')
 
 class HandwrittenSlogan {
 	constructor(element, slogans) {

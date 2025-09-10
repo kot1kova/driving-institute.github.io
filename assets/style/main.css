@@ -565,12 +565,58 @@ body {
   display: flex;
   gap: 20px;
 }
-.one-page .certificate__img {
+.one-page .certificate .certificate__images {
+  position: relative;
   max-width: 380px;
+  width: 100%;
+}
+.one-page .certificate .certificate__img {
+  max-width: 380px;
+  width: 100%;
+}
+.one-page .certificate .certificate__light {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  opacity: 0;
+  animation: blink 3.2s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.one-page .certificate__info {
+  max-width: 760px;
   width: 100%;
 }
 .one-page .certificate .text {
   margin-top: 10px;
+}
+.one-page .certificate__box {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.one-page .certificate__logo {
+  margin-left: auto;
+  max-width: 60px;
+  width: 100%;
 }
 
 .hero {
