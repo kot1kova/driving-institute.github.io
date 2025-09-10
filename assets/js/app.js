@@ -68,18 +68,11 @@ gsap
 			opacity: 0,
 			// y: 100,
 			scale: 0.5,
-			duration: 1.5,
+			duration: 1.2,
 			ease: 'power2.out',
 		},
 		'+=0.2'
 	)
-	.from('#car_light', {
-		opacity: 0,
-		// y: 100,
-		// scale: 0.5,
-		duration: 3,
-		// ease: 'power2.out',
-	},'+=0.4')
 
 class HandwrittenSlogan {
 	constructor(element, slogans) {

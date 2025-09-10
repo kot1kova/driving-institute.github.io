@@ -204,17 +204,23 @@
 			0% {
 				opacity: 0;
 			}
-			63% {
+			10% {
 				opacity: 0;
+			}
+			55% {
+				opacity: 0;
+			}
+			65% {
+				opacity: 1;
 			}
 			75% {
-				opacity: 1;
-			}
-			85% {
 				opacity: 0;
 			}
-			100% {
+			85% {
 				opacity: 1;
+			}
+			100% {
+				opacity: 0;
 			}
 		}
 
