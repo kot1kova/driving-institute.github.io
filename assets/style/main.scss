@@ -39,9 +39,9 @@
 	&__wrapper {
 		// padding: 160px 0;
 		display: flex;
-  flex-direction: column;
-  min-height: 600px;
-  justify-content: center;
+		flex-direction: column;
+		min-height: 600px;
+		justify-content: center;
 	}
 	&__under {
 		font-family: $ff-ser;
@@ -70,7 +70,7 @@
 		width: 100%;
 		&:hover {
 			color: $white;
-			background-color: $blue;
+			box-shadow: inset 0 -3.25em 0 0 $black;
 		}
 	}
 	.hgb {
@@ -79,7 +79,7 @@
 		max-width: 278px;
 		width: 100%;
 		&:hover {
-			background-color: $blue;
+			box-shadow: inset 0 -3.25em 0 0 $blue;
 			border: 1px solid $blue;
 		}
 	}
@@ -147,7 +147,7 @@
 			margin-top: auto;
 		}
 	}
-	
+
 	.one {
 		margin-top: 80px;
 		&__wrapper {
@@ -219,7 +219,7 @@
 			font-size: $fz-20;
 		}
 	}
-	
+
 	.profit {
 		margin-top: 80px;
 		&__wrapper {
@@ -231,7 +231,7 @@
 		&__row {
 			display: flex;
 			align-items: center;
-	
+
 			gap: 20px;
 		}
 		&__box {

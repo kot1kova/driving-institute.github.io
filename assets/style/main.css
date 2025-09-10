@@ -184,10 +184,11 @@ body {
   font-size: 20px;
   padding: 15px;
   text-align: center;
-  transition: 0.3s ease;
+  transition: 0.4s ease;
 }
-.btn:hover {
-  transition: 0.3s ease;
+.btn:hover, .btn:focus {
+  transition: 0.4s ease;
+  box-shadow: inset 0 -3.25em 0 0 #0a0e17;
 }
 
 .header {
@@ -691,7 +692,7 @@ body {
 }
 .hero .hbw:hover {
   color: #eff4ff;
-  background-color: #194fb9;
+  box-shadow: inset 0 -3.25em 0 0 #0a0e17;
 }
 .hero .hgb {
   color: #eff4ff;
@@ -700,7 +701,7 @@ body {
   width: 100%;
 }
 .hero .hgb:hover {
-  background-color: #194fb9;
+  box-shadow: inset 0 -3.25em 0 0 #194fb9;
   border: 1px solid #194fb9;
 }
 

@@ -47,7 +47,7 @@ gsap
 gsap
 	.timeline({
 		scrollTrigger: {
-			trigger: '.certificate',
+			trigger: '.taxi__img',
 			start: 'top 80%',
 			// end: "bottom bottom",
 			end: 'bottom 60%',

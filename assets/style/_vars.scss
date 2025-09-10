@@ -229,15 +229,103 @@ body {
 	}
 }
 
+// .btn-style511 {
+// 	$btn-color: transparent;
+// 	$btn-hover-color: #dd6395;
+// 	position: relative;
+// 	border-color: $btn-color;
+// 	background-color: $btn-color;
+// 	color: #484848;
+// 	overflow: hidden;
+// 	span {
+// 		position: relative;
+// 		z-index: 2;
+// 	}
+// 	&::before,
+// 	&::after {
+// 		width: 100%;
+// 		height: 50%;
+// 		position: absolute;
+// 		left: 0;
+// 		background-color: $btn-hover-color;
+// 		transition: all 0.25s;
+// 		content: '';
+// 		z-index: 1;
+// 	}
+// 	&::before {
+// 		top: 0;
+// 		transform: translate(-100%, 0);
+// 	}
+// 	&::after {
+// 		bottom: 0;
+// 		transform: translate(100%, 0);
+// 	}
+// 	&:hover {
+// 		color: #fff;
+// 		&::before,
+// 		&::after {
+// 			transform: translate(0, 0);
+// 		}
+// 	}
+// }
+// .btn {
+
+// 	font-family: $ff-und;
+// 	border-radius: $br-20;
+// 	font-size: $fz-20;
+// 	padding: 15px;
+// 	text-align: center;
+
+
+// 	$btn-color: transparent;
+// 	$btn-hover-color: $dark-blue;
+// 	position: relative;
+// 	border-color: $btn-color;
+// 	background-color: $btn-color;
+// 	color: #484848;
+// 	overflow: hidden;
+// 	span {
+// 		position: relative;
+// 		z-index: 2;
+// 	}
+// 	&::before,
+// 	&::after {
+// 		width: 100%;
+// 		height: 50%;
+// 		position: absolute;
+// 		left: 0;
+// 		background-color: $btn-hover-color;
+// 		transition: all 0.25s;
+// 		content: '';
+// 		z-index: 1;
+// 	}
+// 	&::before {
+// 		top: 0;
+// 		transform: translate(-100%, 0);
+// 	}
+// 	&::after {
+// 		bottom: 0;
+// 		transform: translate(100%, 0);
+// 	}
+// 	&:hover {
+// 		color: #fff;
+// 		&::before,
+// 		&::after {
+// 			transform: translate(0, 0);
+// 		}
+// 	}
+// }
 .btn {
 	font-family: $ff-und;
 	border-radius: $br-20;
 	font-size: $fz-20;
 	padding: 15px;
 	text-align: center;
-	transition: 0.3s ease;
-	&:hover {
-		transition: 0.3s ease;
+	transition: 0.4s ease;
+	&:hover,
+	&:focus {
+		transition: 0.4s ease;
+		box-shadow: inset 0 -3.25em 0 0 $black;
 	}
 }
 
@@ -438,7 +526,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	
+
 		p {
 			font-family: $ff-ser;
 			color: $blue;
@@ -462,10 +550,10 @@ body {
 	}
 	&__link {
 		color: $light-blue;
-		transition: ease-in .2s;
+		transition: ease-in 0.2s;
 		&:hover {
-		transition: ease-in .2s;
-		color: $white;
+			transition: ease-in 0.2s;
+			color: $white;
 		}
 	}
 }
