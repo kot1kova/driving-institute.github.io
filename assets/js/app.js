@@ -24,7 +24,7 @@ gsap.timeline({
     end: "bottom 60%",
     toggleActions: "play none none none",
     // markers: true,
-  }
+  }	
 })
 .from(".taxi__content", {
   opacity: 0,
@@ -38,6 +38,36 @@ gsap.timeline({
   duration: 1,
   ease: "power2.out"
 }, "+=0.2"); 
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: ".certificate",
+    start: "top 80%",
+    // end: "bottom bottom",
+    end: "bottom 60%",
+    toggleActions: "play none none none",
+    // markers: true,
+  }	
+})
+.from(".certificate__info", {
+  opacity: 0,
+  y: 70,
+  duration: 0.5,
+  ease: "power2.out"
+})
+.from("#car_two", {
+  opacity: 0,
+  // y: 100,
+	scale: 0.5,
+  duration: 1.5,
+  ease: "power2.out"
+}, "+=0.2"); 
+
+
+
+
+
+
 
 class HandwrittenSlogan {
 	constructor(element, slogans) {

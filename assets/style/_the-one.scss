@@ -75,11 +75,14 @@
 		margin-top: 40px;
 		&__wrapper {
 			margin-top: 40px;
+			// display: flex;
+			// flex-wrap: wrap;
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			gap: 20px;
 		}
 		&__item {
+			// width: 48%;
 			padding: 20px;
 			display: flex;
 			justify-content: space-between;
@@ -168,5 +171,19 @@
 		// 	max-width: 780px;
 		// 	width: 100%;
 		// }
+	}
+	.certificate {
+		margin-top: 80px;
+		&__wrapper {
+			display: flex;
+			gap: 20px;
+		}
+		&__img {
+			max-width: 380px;
+			width: 100%;
+		}
+		.text {
+			margin-top: 10px;
+		}
 	}
 }

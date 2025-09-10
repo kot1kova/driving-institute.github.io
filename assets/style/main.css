@@ -558,6 +558,20 @@ body {
 .one-page .taxi .text {
   margin-top: 20px;
 }
+.one-page .certificate {
+  margin-top: 80px;
+}
+.one-page .certificate__wrapper {
+  display: flex;
+  gap: 20px;
+}
+.one-page .certificate__img {
+  max-width: 380px;
+  width: 100%;
+}
+.one-page .certificate .text {
+  margin-top: 10px;
+}
 
 .hero {
   position: relative;
