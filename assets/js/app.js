@@ -73,7 +73,24 @@ gsap
 		},
 		'+=0.2'
 	)
-
+var swiper = new Swiper('.school-slider', {
+	spaceBetween: 30,
+	effect: 'fade',
+	loop: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+})
+var swiper = new Swiper('.team-slider', {
+	spaceBetween: 30,
+	effect: 'fade',
+	loop: true,
+	// autoplay: {
+	// 	delay: 3000,
+	// 	disableOnInteraction: false,
+	// },
+})
 class HandwrittenSlogan {
 	constructor(element, slogans) {
 		this.element = element

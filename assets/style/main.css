@@ -626,6 +626,82 @@ body {
   width: 100%;
 }
 
+.about-page .hero {
+  background-image: url(../img/about/hero-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.about-page .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0a0e17;
+  opacity: 80%;
+}
+.about-page .hero__inner {
+  position: relative;
+  z-index: 1;
+}
+.about-page .school {
+  margin-top: 40px;
+}
+.about-page .school__wrapper {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.about-page .school__info {
+  max-width: 580px;
+  width: 100%;
+}
+.about-page .school .swiper-wrapper {
+  max-width: 580px;
+  width: 100%;
+}
+.about-page .school__slide {
+  max-height: 260px;
+  display: flex;
+  align-items: center;
+}
+.about-page .school .text {
+  margin-top: 10px;
+}
+.about-page .school .text:first-child {
+  margin-top: 0;
+}
+.about-page .team {
+  height: 200vh;
+  margin-top: 80px;
+}
+.about-page .team__wrapper {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.about-page .team__info {
+  max-width: 580px;
+  width: 100%;
+}
+.about-page .team .swiper-wrapper {
+  max-width: 580px;
+  width: 100%;
+}
+.about-page .team__slide {
+  max-height: 280px;
+  display: flex;
+  align-items: center;
+}
+.about-page .team .text {
+  margin-top: 10px;
+}
+.about-page .team .text:first-child {
+  margin-top: 0;
+}
+
 .hero {
   position: relative;
 }

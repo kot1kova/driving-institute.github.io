@@ -1,0 +1,77 @@
+.about-page {
+	.hero {
+		background-image: url(../img/about/hero-img.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background-color: $black;
+			opacity: 80%;
+		}
+		&__inner {
+			position: relative;
+			z-index: 1;
+		}
+	}
+	.school {
+		margin-top: 40px;
+		&__wrapper {
+			margin-top: 20px;
+			display: flex;
+			gap: 20px;
+		}
+		&__info {
+			max-width: 580px;
+			width: 100%;
+		}
+		.swiper-wrapper {
+			max-width: 580px;
+			width: 100%;
+		}
+		&__slide {
+			max-height: 260px;
+			display: flex;
+			align-items: center;
+		}
+		.text {
+			margin-top: 10px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+	.team {
+	height: 200vh;
+		margin-top: 80px;
+		&__wrapper {
+			margin-top: 20px;
+			display: flex;
+			gap: 20px;
+		}
+		&__info {
+			max-width: 580px;
+			width: 100%;
+		}
+		.swiper-wrapper {
+			max-width: 580px;
+			width: 100%;
+		}
+		&__slide {
+			max-height: 280px;
+			display: flex;
+			align-items: center;
+		}
+		.text {
+			margin-top: 10px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}
