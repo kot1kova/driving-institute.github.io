@@ -73,6 +73,18 @@ gsap
 		},
 		'+=0.2'
 	)
+	//burger
+	let menuBtn = document.querySelector('#menu-btn');
+	let menuNav = document.querySelector('#menu-nav');
+	let body = document.body;
+	menuBtn.addEventListener('click', function(){
+		menuBtn.classList.toggle('active');
+		menuNav.classList.toggle('active');
+		body.classList.toggle('no-scroll');
+		
+	})
+
+	//slider
 var swiper = new Swiper('.school-slider', {
 	spaceBetween: 30,
 	effect: 'fade',
@@ -86,11 +98,12 @@ var swiper = new Swiper('.team-slider', {
 	spaceBetween: 30,
 	effect: 'fade',
 	loop: true,
-	// autoplay: {
-	// 	delay: 3000,
-	// 	disableOnInteraction: false,
-	// },
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
 })
+//text
 class HandwrittenSlogan {
 	constructor(element, slogans) {
 		this.element = element
