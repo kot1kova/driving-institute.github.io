@@ -321,6 +321,12 @@ body {
   transform: rotate(-45deg);
   bottom: 8px;
 }
+.header__contact-menu, .header__lang-menu {
+  display: none;
+}
+.header__contact-link {
+  color: #eff4ff;
+}
 
 .consultation {
   margin-top: 80px;
@@ -558,6 +564,10 @@ body {
 }
 .one-page .taxi .text {
   margin-top: 20px;
+}
+.one-page .taxi__img {
+  max-width: 780px;
+  width: 100%;
 }
 .one-page .certificate {
   margin-top: 80px;
@@ -980,6 +990,16 @@ body {
   }
   .header__left {
     display: none;
+  }
+  .header__contact-menu {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header__lang-menu {
+    display: flex;
+    gap: 10px;
   }
   .header .dropdown__menu {
     position: static;

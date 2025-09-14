@@ -466,6 +466,14 @@ body {
 		transform: rotate(-45deg);
 		bottom: 8px;
 	}
+	
+	&__contact-menu,
+	&__lang-menu {
+		display: none;
+	}
+	&__contact-link {
+		color: $white;
+	}
 	// &__burger {
 	// 	display: none;
 	// 	cursor: pointer;

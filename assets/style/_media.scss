@@ -37,6 +37,16 @@
 			display: none;
 		}
 
+		&__contact-menu {
+			margin-top: auto;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+		&__lang-menu {
+			display: flex;
+			gap: 10px;
+		}
 
 		// &__menu.active .header__left {
 		// 	display: block;
